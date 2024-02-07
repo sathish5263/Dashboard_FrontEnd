@@ -1,0 +1,347 @@
+body {
+    background: linear-gradient(135deg, #b7b6da, #5e87b3, #4fb7a6);
+}
+
+
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  
+  .AppFooter {
+    height: 50px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  
+    a {
+      display: inline-block;
+      width: fit-content;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: 500;
+      color: darkblue;
+  
+      &:hover {
+        display: inline-block;
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+         background: white;
+        color: darkblue;
+      }
+    }
+  }
+  
+  .SideMenuAndPageContent {
+    display: flex;
+    flex: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+    //  background: linear-gradient(135deg, #b7b6da, #5e87b3, #4fb7a6);
+  }
+  
+  .SideMenu {
+    height: 100%;
+    //  background: linear-gradient(135deg, #b7b6da, #5e87b3, #4fb7a6);
+    flex: 2;
+  }
+  
+  .SideMenuVertical {
+    height: 100%;
+    background: linear-gradient(135deg, #b7b6da, #5e87b3, #5e87b3);
+  }
+  
+  .PageContent {
+    padding-left: 12px;
+    flex: 7;
+  }
+  
+  .dashboard_card #Card {
+    padding: 10;
+  }
+  
+
+
+  // App header
+
+  .AppHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    padding: 8px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  
+    .ant-image {
+      width: 50px;
+    }
+  
+    .ant-typography {
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Georgia, serif;
+    }
+  
+    .ant-space {
+      .ant-badge {
+        .anticon {
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .ant-drawer {
+      .ant-list {
+        .ant-list-item {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+
+  // dashboard 
+
+  .green-icon {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .blue-icon {
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .purple-icon {
+    color: purple;
+    background-color: rgba(0, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .red-icon {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  // Add any additional styles you need for the Dashboard component
+  
+  
+
+
+  // DropDown
+
+  .side_menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  // title
+  .dashboard-text {
+    margin-left: 50px;
+  }
+  .customers-text {
+    margin-left: 50px;
+  }
+  .inventory-text {
+    margin-left: 50px;
+  }
+  .orders-text {
+    margin-left: 50px;
+  }
+
+  .recent-text {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: black;
+  }
+  .table-container {
+    overflow-x: auto;
+  }
+  .horizontal-scroll-container {
+    overflow-x: auto;
+    width: 100%;
+    background-color: white; /* Set the desired background color */
+  }
+  
+  /* Add any additional styles for your table here */
+  .ant-table-tbody > tr > td {
+    background-color: white; /* Set the same background color as the container */
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .App {
+        margin-right: 0px;
+    }
+    .AppFooter {
+        margin-top: 50px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .AppFooter a {
+      margin-top: 5px;
+    }
+  
+    .SideMenuAndPageContent {
+      flex-direction: column;
+    }
+  
+    .SideMenu {
+      margin-top: 10px;
+    }
+  
+    .PageContent {
+      margin-top: 10px;
+    }
+  
+    .AppHeader {
+      align-items: flex-start;
+      padding: 8px;
+      margin-top: 10px;
+      margin-right: 30px;
+    }
+  
+    .green-icon,
+    .blue-icon,
+    .purple-icon,
+    .red-icon {
+      padding: 8px;
+      font-size: 20px;
+    }
+    .dashboard-card-container {
+        grid-template-rows: 1fr;
+      }
+    
+      .dashboard-card {
+        width: 100%;
+        display: flex;
+        
+      }
+    
+      .green-icon,
+      .blue-icon,
+      .purple-icon,
+      .red-icon {
+        font-size: 25px;
+      }
+      .table-container {
+        width: 100%; /* Set the desired width */ 
+      }
+      .horizontal-scroll-container {
+        width: 62%; 
+        margin-right: 20px;
+        margin-left: 30px;
+      }
+
+      .dashboard_card {
+         width: 300px;
+        padding-left: 30px;
+      }
+
+      .dashboard-container {
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px; 
+            grid-template-columns: repeat(1, 1fr);
+      }
+      .dashboard-card-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: -300px;
+    //   grid-template-columns: 1fr;
+    //   grid-gap: 20px; 
+    //   grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+      align-items: center;
+      }
+      .dashboard-2 {
+        display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 20px;
+            grid-template-columns: repeat(1, 1fr); 
+    }
+    .chart-style {
+        width: 40%;
+    }
+    .table-recent {
+        width: min-content;
+        margin-left: 0px;
+    }
+    .recent {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin-left: -300px;
+    }
+  }
+
+
+
+
+//   .dashboard-container {
+//  // Adjust the gap as needed
+
+//   @media only screen and (min-width: 768px) {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-gap: 20px; 
+//     grid-template-columns: repeat(2, 1fr); // Change the number of columns as needed
+//   }
+
+// }
+
+// .dashboard-card-container {
+//   // Adjust the gap as needed
+
+//   @media only screen and (min-width: 768px) {
+//     display: grid;
+//   grid-template-columns: 1fr;
+//   grid-gap: 20px; 
+//     grid-template-columns: repeat(2, 1fr); // Change the number of columns as needed
+//   }
+
+// }
+
+// .dashboard-2 {
+//    // Adjust the gap as needed
+
+//   @media only screen and (min-width: 768px) {
+//     display: grid;
+//   grid-template-columns: 1fr;
+//   grid-gap: 20px;
+//     grid-template-columns: repeat(2, 1fr); // Change the number of columns as needed
+//   }
+ 
+// }
